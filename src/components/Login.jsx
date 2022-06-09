@@ -1,13 +1,19 @@
 import "./Login.css";
+import Video from "../img/Rainbow.webm";
+import Logo from "../img/ubilogo.svg";
+
 function Login() {
   return (
     <div className="container">
       <div className="login">
         <div className="sub-card">
-          <h1 className="bemvindo">Bem Vindo</h1>
+          <div className="logo">
+            <img src={Logo} alt="" />
+          </div>
+
           <form className="inputs">
             <label htmlFor="login-email">
-              <span>Usuario </span>
+              <span>LOGIN </span>
             </label>
             <input
               id="login-email"
@@ -15,9 +21,7 @@ function Login() {
               placeholder="Digite o Usuario"
             />
 
-            <label htmlFor="login-senha">
-              <span>Senha </span>
-            </label>
+            <label htmlFor="login-senha"></label>
             <input
               id="login-senha"
               type="password"
@@ -43,6 +47,11 @@ function Login() {
         <h3 className="criar-conta">
           Ainda não tem conta?<a href="#"> Criar Conta</a>
         </h3>
+      </div>
+      <div className="video">
+        <video autoPlay loop muted>
+          <source src={Video} type="video/webm" />
+        </video>
       </div>
     </div>
   );
