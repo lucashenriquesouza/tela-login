@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <Login />
+      <h1>FanPage for Portfólio</h1>
     </div>
   );
 }

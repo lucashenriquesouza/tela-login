@@ -1,6 +1,6 @@
 import "./Login.css";
 import Video from "../img/Rainbow.webm";
-import Logo from "../img/ubilogo.svg";
+import Logo from "../img/r6-logo.png";
 
 function Login() {
   return (
